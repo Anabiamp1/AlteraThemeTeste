@@ -1,0 +1,116 @@
+/*Tema claro /escuro*/
+
+:root{
+    --bg: #f0f0f0;
+    --text: #333333;
+    --borda: #dddddd;
+    --caixa: #ffffff;
+    --acao: #007bff;
+}
+
+[data-tema="escuro"]{
+    --bg: #121212;
+    --text: #e0e0e0;
+    --borda: #333333;
+    --caixa: #1e1e1e;
+    --acao: #1a73e8;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.topo{
+    border-bottom: 1px solid var(--borda);
+
+}
+
+.topo .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .75rem 1rem;
+
+}
+
+.caixa {
+    border: 1px solid var(--borda);
+    background-color: var(--caixa);
+    border-radius: .5rem;
+    border: .5rem;
+    padding: 2rem 1rem;
+    max-width: 80%;
+    margin: 1.5rem auto;
+
+
+}
+
+h1{
+    margin-bottom: .5rem;
+    font-size: 1.6rem;
+}
+
+p{
+    margin: 1rem 0;
+
+}
+
+form {
+    display: grid;
+    gap: .5rem;
+}
+
+label{
+    font-weight: 600;
+
+}
+
+input{
+    padding: .7rem .9rem;
+    border: 1px solid var(--borda);
+    border-radius: .5rem;
+    background-color: var(--bg);
+    color: var(--text);
+
+}
+
+.btn {
+    padding: .6rem .9rem;
+    border: 1px solid var(--borda);
+    background-color: var(--bg);
+    color: var(--text);
+    border-radius: .5rem;
+    cursor: pointer;
+    max-width: 200px;
+}
+
+.btn.primario {
+    margin-top: 1rem;
+    background-color: var(--acao);
+    color: #fff;
+}
+
+.rodape {
+    border-top: 1px solid var(--borda);
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    margin-top: auto;
+}
